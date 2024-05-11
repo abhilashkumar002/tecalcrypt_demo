@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/tecalcrypt_demo/static/css/main.e6c13ad2.css",
+    "main.js": "/tecalcrypt_demo/static/js/main.be6a8f29.js",
+    "static/js/453.5b3f8111.chunk.js": "/tecalcrypt_demo/static/js/453.5b3f8111.chunk.js",
+    "index.html": "/tecalcrypt_demo/index.html",
+    "main.e6c13ad2.css.map": "/tecalcrypt_demo/static/css/main.e6c13ad2.css.map",
+    "main.be6a8f29.js.map": "/tecalcrypt_demo/static/js/main.be6a8f29.js.map",
+    "453.5b3f8111.chunk.js.map": "/tecalcrypt_demo/static/js/453.5b3f8111.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.be6a8f29.js"
+  ]
+}
