@@ -65,7 +65,7 @@ class Decoder extends Component {
             <div className='right-decode'>
                 <div className='grid-center'><span style={{ fontSize: "4vh" }}>Decode</span></div>
                 <div className='grid-center'>
-                    <input type='number' min="0" onChange={(event) => this.handleInputChange(event)} placeholder='input encoded number' />
+                    <input type='number' onChange={(event) => this.handleInputChange(event)} placeholder='input encoded number' />
                     <button onClick={()=> this.handleInputDecode()}>Decode</button>
                 </div>
                 <div className='grid-center'>
