@@ -28,8 +28,6 @@ class Decoder extends Component {
 
         let input = new BigNumber(this.state.inputNumber);
 
-        input = input.times(48630347521).plus(input.times(73859288608)).plus(input.times(86947812561)).plus(input.times(93738008736));
-
         const alpha = new BigNumber('17.5203995226232298507635558971986343568269307913621255441024');
         const beta = new BigNumber('9.08940918396933145589411466653591006324970333003584952642362');
         const gamma = new BigNumber('1.26914313016882383167214704070060590497498698937501166713508');
