@@ -1,0 +1,25 @@
+.main-container {
+    display: grid;
+    height: 100vh;
+    grid-auto-rows: 1fr 8fr 1fr;
+    background-color: rgb(187, 219, 250);
+}
+
+.grid-center {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.center-content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgb(255, 255, 255);
+}
+
+.right-decode {
+    display: grid;
+    grid-auto-rows: 1fr 1fr 3fr;
+}
