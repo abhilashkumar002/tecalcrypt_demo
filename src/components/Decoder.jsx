@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import BigNumber from 'bignumber.js';
+
+BigNumber.config({ DECIMAL_PLACES: 100 });
 
 class Decoder extends Component {
     constructor(props) {
@@ -23,21 +26,39 @@ class Decoder extends Component {
 
     handleInputDecode = () => {
 
-        const input = this.state.inputNumber;
+        let input = new BigNumber(this.state.inputNumber);
 
-        const alpha = 17.5203995226232298507635558971986343568269307913621255441024;
-        const beta = 9.08940918396933145589411466653591006324970333003584952642362;
-        const gamma = 1.26914313016882383167214704070060590497498698937501166713508;
+        input = input.times(48630347521).plus(input.times(73859288608)).plus(input.times(86947812561)).plus(input.times(93738008736));
 
-        const wd = (12193 * input) + (11856 * Math.round(input/alpha)) + (1744 * Math.round(input/beta)) + (-16577 * Math.round(input/gamma));
-        const xd = (-10449 * input) + (-7809 * Math.round(input/alpha)) + (-337 * Math.round(input/beta)) + (13874 * Math.round(input/gamma));
-        const yd = (10112 * input) + (7024 * Math.round(input/alpha)) + (2640 * Math.round(input/beta)) + (-13711 * Math.round(input/gamma));
-        const zd = (-7472 * input) + (-6513 * Math.round(input/alpha)) + (-3088 * Math.round(input/beta)) + (10386 * Math.round(input/gamma));
+        const alpha = new BigNumber('17.5203995226232298507635558971986343568269307913621255441024');
+        const beta = new BigNumber('9.08940918396933145589411466653591006324970333003584952642362');
+        const gamma = new BigNumber('1.26914313016882383167214704070060590497498698937501166713508');
+
+        const wd = new BigNumber('12193').times(input)
+            .plus(new BigNumber('11856').times(input.dividedBy(alpha).integerValue(BigNumber.ROUND_HALF_UP)))
+            .plus(new BigNumber('1744').times(input.dividedBy(beta).integerValue(BigNumber.ROUND_HALF_UP)))
+            .plus(new BigNumber('-16577').times(input.dividedBy(gamma).integerValue(BigNumber.ROUND_HALF_UP)));
+
+        const xd = new BigNumber('-10449').times(input)
+            .plus(new BigNumber('-7809').times(input.dividedBy(alpha).integerValue(BigNumber.ROUND_HALF_UP)))
+            .plus(new BigNumber('-337').times(input.dividedBy(beta).integerValue(BigNumber.ROUND_HALF_UP)))
+            .plus(new BigNumber('13874').times(input.dividedBy(gamma).integerValue(BigNumber.ROUND_HALF_UP)));
+
+        const yd = new BigNumber('10112').times(input)
+            .plus(new BigNumber('7024').times(input.dividedBy(alpha).integerValue(BigNumber.ROUND_HALF_UP)))
+            .plus(new BigNumber('2640').times(input.dividedBy(beta).integerValue(BigNumber.ROUND_HALF_UP)))
+            .plus(new BigNumber('-13711').times(input.dividedBy(gamma).integerValue(BigNumber.ROUND_HALF_UP)));
+
+        const zd = new BigNumber('-7472').times(input)
+            .plus(new BigNumber('-6513').times(input.dividedBy(alpha).integerValue(BigNumber.ROUND_HALF_UP)))
+            .plus(new BigNumber('-3088').times(input.dividedBy(beta).integerValue(BigNumber.ROUND_HALF_UP)))
+            .plus(new BigNumber('10386').times(input.dividedBy(gamma).integerValue(BigNumber.ROUND_HALF_UP)));
 
 
         this.setState({
-            output: {w:wd, x:xd, y:yd, z:zd}
-        })
+            output: { w: wd.toString(), x: xd.toString(), y: yd.toString(), z: zd.toString() }
+        });
+
     }
     
     render() {
