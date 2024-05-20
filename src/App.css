@@ -1,25 +1,90 @@
 .main-container {
-    display: grid;
-    height: 100vh;
-    grid-auto-rows: 1fr 8fr 1fr;
-    background-color: rgb(187, 219, 250);
+  display: grid;
+  height: 100vh;
+  grid-auto-rows: 1fr 8fr 1fr;
+  background-color: rgb(187, 219, 250);
 }
 
 .grid-center {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    align-items: center;
-    justify-items: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  justify-items: center;
 }
 
 .center-content-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background-color: rgb(255, 255, 255);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: rgb(255, 255, 255);
 }
 
 .right-decode {
+  display: grid;
+  grid-auto-rows: 1fr 1fr 3fr;
+}
+
+.input-number::-webkit-outer-spin-button,
+.input-number::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input-number[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.input-number {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  min-width: 20vw;
+  width: auto;
+  max-width: 100%;
+}
+
+.input-number:focus {
+  outline: none;
+  border-color: #0056b3;
+}
+
+.button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.button:focus {
+  outline: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .center-content-grid {
     display: grid;
-    grid-auto-rows: 1fr 1fr 3fr;
+    grid-template-columns: 1fr;
+    background-color: rgb(255, 255, 255);
+  }
 }
