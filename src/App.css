@@ -2,7 +2,7 @@
   display: grid;
   height: 100vh;
   grid-auto-rows: 1fr 8fr 1fr;
-  background-color: rgb(187, 219, 250);
+  background-color: rgba(51, 173, 180, 255);
 }
 
 .grid-center {
@@ -19,9 +19,18 @@
   background-color: rgb(255, 255, 255);
 }
 
+.input-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 20% 10% 35% 35%;
+  align-items: center;
+  justify-items: center;
+  height: 80%;
+}
+
 .right-decode {
   display: grid;
-  grid-auto-rows: 1fr 1fr 3fr;
+  grid-auto-rows: 1fr 2fr 3fr;
 }
 
 .input-number::-webkit-outer-spin-button,
@@ -37,7 +46,7 @@
 .input-number {
   padding: 10px 20px;
   font-size: 16px;
-  border: 2px solid #007bff;
+  border: 2px solid #33adb4;
   border-radius: 5px;
   background-color: #fff;
   color: #000;
@@ -49,15 +58,15 @@
 
 .input-number:focus {
   outline: none;
-  border-color: #0056b3;
+  border-color: #33adb4;
 }
 
 .button {
   padding: 10px 20px;
   font-size: 16px;
-  border: 2px solid #007bff;
+  border: 2px solid #33adb4;
   border-radius: 5px;
-  background-color: #007bff;
+  background-color: #33adb4;
   color: #fff;
   text-align: center;
   cursor: pointer;
@@ -65,11 +74,15 @@
 }
 
 .button:hover {
-  background-color: #0056b3;
+  background-color: #33adb4;
 }
 
 .button:focus {
   outline: none;
+}
+
+.align-text-center {
+  text-align: center;
 }
 
 ul {
@@ -86,5 +99,9 @@ li {
     display: grid;
     grid-template-columns: 1fr;
     background-color: rgb(255, 255, 255);
+  }
+
+  .footer {
+    background-color: rgba(51, 173, 180, 255);
   }
 }

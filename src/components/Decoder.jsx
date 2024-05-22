@@ -135,22 +135,34 @@ class Decoder extends Component {
             <span style={{ fontSize: "4vh" }}>Decode</span>
           </div>
           <div className="grid-center">
-            <input
-              type="number"
-              onChange={(event) => this.handleInputChange(event)}
-              className="input-number"
-            />
-            <button className="button" onClick={() => this.handleInputDecode()}>
-              Decode
-            </button>
+            <div className="input-section">
+              <p>
+                Enter calculated <b>S</b> value below
+              </p>
+              <p>&darr;</p>
+              <input
+                type="number"
+                onChange={(event) => this.handleInputChange(event)}
+                className="input-number"
+              />
+              <button
+                className="button"
+                onClick={() => this.handleInputDecode()}
+              >
+                Decode
+              </button>
+            </div>
           </div>
           <div className="grid-center">
-            <ul>
-              <li>W: {w}</li>
-              <li>X: {x}</li>
-              <li>Y: {y}</li>
-              <li>X: {z}</li>
-            </ul>
+            <div className="align-text-center">
+              <p>Decoded numbers:</p>
+              <ul>
+                <li>W: {w}</li>
+                <li>X: {x}</li>
+                <li>Y: {y}</li>
+                <li>Z: {z}</li>
+              </ul>
+            </div>
           </div>
         </div>
       );

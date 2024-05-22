@@ -1,5 +1,6 @@
 import "./App.css";
 import Decoder from "./components/Decoder";
+import Information from "./components/Information";
 
 function App() {
   return (
@@ -9,16 +10,15 @@ function App() {
           <span style={{ fontSize: "5vw", padding: "2vh" }}>Demo</span>
         </div>
         <div className="center-content-grid">
-          <div className="grid-center">
-            <img
-              src={process.env.PUBLIC_URL + "/logo.png"}
-              alt="Tecalcrypt logo"
-              style={{ height: 200, width: 200 }}
-            />
-          </div>
+          <Information />
           <Decoder />
         </div>
-        <div className="grid-center">Tecalcrypt demo 2024-25</div>
+        <div className="grid-center footer">
+          <div className="align-text-center">
+            <p>Build by Saurav Goswami & Abhilash Kumar</p>
+            <p>Tecalcrypt 2024-25</p>
+          </div>
+        </div>
       </div>
     </div>
   );
