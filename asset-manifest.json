@@ -1,15 +1,12 @@
 {
   "files": {
-    "main.css": "/tecalcrypt_demo/static/css/main.fa732690.css",
-    "main.js": "/tecalcrypt_demo/static/js/main.0647c8ce.js",
-    "static/js/453.5b3f8111.chunk.js": "/tecalcrypt_demo/static/js/453.5b3f8111.chunk.js",
-    "index.html": "/tecalcrypt_demo/index.html",
-    "main.fa732690.css.map": "/tecalcrypt_demo/static/css/main.fa732690.css.map",
-    "main.0647c8ce.js.map": "/tecalcrypt_demo/static/js/main.0647c8ce.js.map",
-    "453.5b3f8111.chunk.js.map": "/tecalcrypt_demo/static/js/453.5b3f8111.chunk.js.map"
+    "main.css": "/tecalcrypt_demo/static/css/main.91602c29.css",
+    "main.js": "/tecalcrypt_demo/static/js/main.80049bb3.js",
+    "static/js/206.f8ab2d8c.chunk.js": "/tecalcrypt_demo/static/js/206.f8ab2d8c.chunk.js",
+    "index.html": "/tecalcrypt_demo/index.html"
   },
   "entrypoints": [
-    "static/css/main.fa732690.css",
-    "static/js/main.0647c8ce.js"
+    "static/css/main.91602c29.css",
+    "static/js/main.80049bb3.js"
   ]
 }
