@@ -24,7 +24,7 @@ class Information extends Component {
           </p>
           <p>
             <code>
-              <b>w, x, y, z</b> ranges from -300 to +300.
+              <b>For this demo build w, x, y, z</b> ranges from -300 to +300.
             </code>
           </p>
         </div>
