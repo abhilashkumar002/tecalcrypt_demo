@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/tecalcrypt_demo/static/css/main.91602c29.css",
-    "main.js": "/tecalcrypt_demo/static/js/main.deff9adf.js",
+    "main.js": "/tecalcrypt_demo/static/js/main.c0afe3ab.js",
     "static/js/206.f8ab2d8c.chunk.js": "/tecalcrypt_demo/static/js/206.f8ab2d8c.chunk.js",
     "index.html": "/tecalcrypt_demo/index.html"
   },
   "entrypoints": [
     "static/css/main.91602c29.css",
-    "static/js/main.deff9adf.js"
+    "static/js/main.c0afe3ab.js"
   ]
 }
